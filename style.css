@@ -1,0 +1,97 @@
+
+:root {
+    /*text*/
+    --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+    --Softred: hsl(14, 88%, 65%);
+    /*Background gradient*/
+    --Softviolet: hsl(273, 75%, 66%);
+    --Softblue: hsl(240, 73%, 65%);
+    /*Neutral text*/
+    --Verydarkgrayishblue: hsl(237, 12%, 33%);
+    --Darkgrayishblue: hsl(240, 6%, 50%);
+    /*Dividers */
+    --Lightgrayishblue: hsl(240, 5%, 91%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.img-wrap {
+    position: relative;
+    margin-top:50px;
+}
+
+.img1 {
+    position: absolute;
+    margin-top:-110px;
+}
+
+@media (min-width: 750px) {
+    .hiddenImgMovile {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .hiddenImgPC {
+        display: none;
+    }
+}
+
+.img-wrap-PC {
+    position: relative;
+}
+.box {
+    position: absolute;
+    z-index: 2;
+    margin-left: -90px; 
+    margin-top: 190px;
+}
+
+.img2PC {
+    position: absolute;
+    z-index: 1;
+    margin-left: -80px;
+    padding-top: 4rem;
+}
+
+.img2PC-shadow {
+    position: absolute;
+    z-index: 0;
+    margin-left: -410px;
+    margin-top: -200px;
+    min-width: 800px;
+    min-height: 700px;
+}
+
+h4 {
+    color: var(--Verydarkgrayishblue);
+}
+
+h4:hover {
+    color: var(--Softred);
+    cursor: pointer;
+}
+
+/*(added .active class with JS) */
+.active,  h4:active{
+    color: black;
+    font-weight: 700;
+}
+
+.content {
+display: none;
+overflow: hidden;
+}
+
+p {
+    color: var(--Darkgrayishblue)
+}
+
+
+
+.attribution a { 
+    color: var(--Lightgrayishblue); 
+}
