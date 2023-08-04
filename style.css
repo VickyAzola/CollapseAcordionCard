@@ -66,11 +66,11 @@ body {
     min-height: 700px;
 }
 
-h4 {
+.question {
     color: var(--Verydarkgrayishblue);
 }
 
-h4:hover {
+.question:hover {
     color: var(--Softred);
     cursor: pointer;
 }
